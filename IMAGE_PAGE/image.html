@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMIZE UR IMAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-black p-4">
+        <div class="flex items-center">
+            <a href="../index.html"><button class="flex items-center text-white font-semibold py-2 px-4 rounded hover:bg-gray-800 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Back
+            </button></a>
+            
+        </div>
+    </nav>
+
+    <div class="flex h-screen">
+        <div class="w-1/3 bg-white text-black p-4 overflow-y-auto h-full">
+            <ul class="space-y-2">
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 1</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Longer Item 2</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 3</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">A Much Longer Item 4</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 5</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Another Long Item 6</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 7</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Long Item Name 8</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 9</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+                <li class="flex items-center">
+                    <span class="w-32 truncate">Item 10</span>
+                    <button class="bg-yellow-500 text-black px-2 py-1 ml-auto">Button</button>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div class="w-2/3 bg-yellow-500 p-4 flex flex-col justify-start h-full">
+            <!-- First div (Image input with title) -->
+            <div class="mb-4">
+                <h2 class="text-black text-xl font-bold mb-2">Upload Image</h2>
+                <input type="file" accept="image/*" class="w-full p-2 border border-black bg-white text-black rounded" onchange="previewImage(event)">
+            </div>
+        
+            <!-- Second div (Output box with title and image) -->
+            <div>
+                <h2 class="text-black text-xl font-bold mb-2">Output</h2>
+                <div class="w-full min-h-[400px] p-2 border border-black bg-white text-black rounded flex items-center justify-center">
+                    <img id="imagePreview" class="max-h-[400px] max-w-[500px] object-contain my-4" alt="Uploaded Image Preview" />
+                </div>
+                <button class="bg-black text-yellow-500 px-2 py-1 mt-5 ml-[50%]">CLEAR</button>
+            </div>
+        </div>
+        
+        <script src="./image.js"></script>
+</body>
+</html>
+

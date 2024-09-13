@@ -1,0 +1,17 @@
+.bg-custom-dark {
+    background-color: #282828 ;
+}
+.bg-custom-yellow {
+    background-color: #ffda66;
+}
+.text-custom-yellow {
+    color: #ffda66;
+}
+.hover-bg-custom-yellow {
+    background-color: #ffd966;
+}
+
+.text:hover{
+    background-color:rgb(242, 126, 126) !important;
+
+}
