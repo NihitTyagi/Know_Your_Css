@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUSTOMIZE UR IMAGE</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="image.css">
     <style>
         .bg-custom-dark {
             background-color: #282828;
@@ -31,7 +32,7 @@
                 </button>
             </a>
         </div>
-        <div class="ml-auto space-x-4 mr-[5px]">
+        <div class= "space-x-4 mr-[5px] ml-auto">
             <a href="../TEXT_PAGE/text.html">
                 <button class="bg-custom-dark text-custom-yellow font-semibold py-2 px-4 rounded hover:bg-hover-bg-custom-yellow hover:bg-custom-dark transition duration-300">
                     Text
@@ -44,96 +45,96 @@
         <!-- Left-side buttons for applying styles -->
         <div class="w-1/3 bg-white text-black p-4 overflow-y-auto h-full">
             <h2 class="text-black text-xl font-bold mb-4">Apply Styles</h2>
-            <ul class="space-y-2">
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Blur</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="blur(5px)">Apply</button>
+            <ul   class="space-y-2" id="listitem">
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Blur</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="blur(5px)">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Grayscale</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="grayscale(100%)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Grayscale</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="grayscale(100%)">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Add Border</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border" data-value="5px solid black">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Add Border</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border" data-value="5px solid black">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Shadow</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="box-shadow" data-value="10px 10px 5px gray">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Shadow</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="box-shadow" data-value="10px 10px 5px gray">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Opacity</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="opacity" data-value="0.8">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Opacity</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="opacity" data-value="0.8">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Clip Path</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="clip-path" data-value="circle(50%)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Clip Path</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="clip-path" data-value="circle(50%)">Apply</button>
                 </li>
 
             </ul>
 
             <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Border Radius</h2>
-            <ul class="space-y-2" >
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Border Radius: 5px</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border-radius" data-value="5px">Apply</button>
+            <ul class="space-y-2" id="listitem">
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Border Radius: 5px</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="5px">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Border Radius: 15px</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border-radius" data-value="15px">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Border Radius: 15px</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="15px">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Border Radius: 25px</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border-radius" data-value="25px">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Border Radius: 25px</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="25px">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Border Radius: 50px</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border-radius" data-value="50px">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Border Radius: 50px</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="50px">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Border Radius: 100px</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="border-radius" data-value="100px">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Border Radius: 100px</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="100px">Apply</button>
                 </li>
                 
             </ul>
             
             <!-- filters -->
              <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Filters</h2>
-             <ul class="space-y-2">
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Drop Shadow</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5))">Apply</button>
+             <ul class="space-y-2" id="listitem">
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Drop Shadow</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5))">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Brightness</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="brightness(150%)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Brightness</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="brightness(150%)">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Contrast</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="contrast(120%)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Contrast</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="contrast(120%)">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Saturate</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="saturate(200%)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Saturate</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="saturate(200%)">Apply</button>
                 </li>
                 
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Hue Rotate</span>
-                    <button class="bg-custom-yellow text-black px-2 py-1 ml-auto" data-style="filter" data-value="hue-rotate(90deg)">Apply</button>
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Hue Rotate</span>
+                    <button class="bg-custom-yellow text-black px-2 py-1" data-style="filter" data-value="hue-rotate(90deg)">Apply</button>
                 </li>
                 
              </ul>
 
              <!-- other -->
              <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Others</h2>
-             <ul class="space-y-2">
+             <ul class="space-y-2" id="listitem">
                 
 
                 
