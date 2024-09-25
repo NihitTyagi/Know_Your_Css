@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUSTOMIZE UR TEXT</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="text.css">
     <style>
         .bg-custom-dark {
             background-color: #282828;
@@ -48,76 +49,76 @@
         <!-- Left-div -->
         <div class="w-1/3 bg-white text-custom-dark p-4 overflow-y-auto h-full">
             <h2 class="text-custom-dark text-xl font-bold mb-4">Basic Styles</h2>
-            <ul class="space-y-2">
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Bold</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-weight"
+            <ul class="space-y-2" id="listitem">
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Bold</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="font-weight"
                         data-value="bold">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Italic</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-style"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Italic</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="font-style"
                         data-value="italic">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Underline</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="text-decoration"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Underline</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 " data-style="text-decoration"
                         data-value="underline">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Uppercase</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="text-transform"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Uppercase</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="text-transform"
                         data-value="uppercase">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Letter Spacing</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="letter-spacing"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Letter Spacing</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="letter-spacing"
                         data-value="2px">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Shadow</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="text-shadow"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Shadow</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="text-shadow"
                         data-value="2px 2px 5px rgba(0,0,0,0.5)">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Line Height</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="line-height"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Line Height</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="line-height"
                         data-value="1.8">Apply</button>
                 </li>
-                <li class="flex items-center">
-                    <span class="w-48 truncate">Word Spacing</span>
-                    <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="word-spacing"
+                <li class="flex items-center" id="addgap">
+                    <span class="truncate">Word Spacing</span>
+                    <button class="bg-custom-yellow text-custom-dark px-2 py-1" data-style="word-spacing"
                         data-value="5px">Apply</button>
                 </li>
             </ul>
             <!-- Font Family -->
             <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Font Family</h2>
             <ul class="space-y-2">
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">Times New Roman</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-family"
                         data-value="Times New Roman">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">Verdana</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-family"
                         data-value="Verdana">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">Georgia</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-family"
                         data-value="Georgia">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">Courier New</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-family"
                         data-value="Courier New">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">Comic Sans MS</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-family"
                         data-value="Comic Sans MS">Apply</button>
@@ -126,31 +127,31 @@
             <!--Font Size -->
             <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Font Size</h2>
             <ul class="space-y-2">
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">12px</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-size"
                         data-value="12px">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">16px</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-size"
                         data-value="16px">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">24px</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-size"
                         data-value="24px">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">28px</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-size"
                         data-value="28px">Apply</button>
                 </li>
 
-                <li class="flex items-center">
+                <li class="flex items-center" id="addgap">
                     <span class="w-48 truncate">32px</span>
                     <button class="bg-custom-yellow text-custom-dark px-2 py-1 ml-auto" data-style="font-size"
                         data-value="32px">Apply</button>

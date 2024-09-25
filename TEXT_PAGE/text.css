@@ -1,0 +1,24 @@
+@media(max-width:750px){
+    #listitem li{
+        flex-direction:column !important;
+        align-items:left !important;
+        gap:10px !important;
+    }
+    #listitem li span{
+        letter-spacing:2px !important;
+    }
+    #listitem li button{
+        width:100% !important;
+        color:rgb(43, 49, 37) !important;
+        font-weight:bold !important;
+    }
+    #addgap{
+        margin:30px 0px !important;
+    }
+}
+@media(min-width:750px){
+    #listitem li{
+        justify-content:space-between !important;
+        padding:0px 10px  !important;
+     }
+}
