@@ -44,7 +44,7 @@
     <div class="flex h-screen">
         <!-- Left-side buttons for applying styles -->
         <div class="w-1/3 bg-white text-black p-4 overflow-y-auto h-full">
-            <h2 class="text-black text-xl font-bold mb-4">Apply Styles</h2>
+            <h2 class="text-black text-xl font-bold mb-4">Basic Styles</h2>
             <ul   class="space-y-2" id="listitem">
                 <li class="flex items-center" id="addgap">
                     <span class="truncate">Blur</span>
@@ -76,27 +76,27 @@
             <h2 class="text-custom-dark text-xl font-bold mt-8 mb-2">Border Radius</h2>
             <ul class="space-y-2" id="listitem">
                 <li class="flex items-center" id="addgap">
-                    <span class="truncate">Border Radius: 5px</span>
+                    <span class="truncate">5px</span>
                     <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="5px">Apply</button>
                 </li>
                 
                 <li class="flex items-center" id="addgap">
-                    <span class="truncate">Border Radius: 15px</span>
+                    <span class="truncate">15px</span>
                     <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="15px">Apply</button>
                 </li>
                 
                 <li class="flex items-center" id="addgap">
-                    <span class="truncate">Border Radius: 25px</span>
+                    <span class="truncate">25px</span>
                     <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="25px">Apply</button>
                 </li>
                 
                 <li class="flex items-center" id="addgap">
-                    <span class="truncate">Border Radius: 50px</span>
+                    <span class="truncate">50px</span>
                     <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="50px">Apply</button>
                 </li>
                 
                 <li class="flex items-center" id="addgap">
-                    <span class="truncate">Border Radius: 100px</span>
+                    <span class="truncate">100px</span>
                     <button class="bg-custom-yellow text-black px-2 py-1" data-style="border-radius" data-value="100px">Apply</button>
                 </li>
                 
@@ -154,11 +154,15 @@
             <div>
                 <h2 class="text-black text-xl font-bold mb-2">Output</h2>
                 <div class="w-full min-h-[400px] p-2 border border-black bg-white text-black rounded flex items-center justify-center">
-                    <img id="imagePreview" class="max-h-[400px] max-w-[500px] object-contain my-4" alt="Uploaded Image Preview" />
+                    <img id="imagePreview" class="max-w-full max-h-[400px] object-contain my-4 border border-black inline-block" alt="Uploaded Image Preview" />
                 </div>
-                <button id="clear" class="bg-custom-dark text-custom-yellow px-2 py-1 mt-5 ml-[50%]">CLEAR</button>
-                <button id="copyBtn" class="bg-custom-dark text-custom-yellow px-2 py-1 mt-5 ml-[50%]">COPY</button>
+                
             </div>
+            <div class="flex justify-around mt-5">
+                <button id="clear" class="bg-custom-dark text-custom-yellow px-4 py-2">CLEAR</button>
+                <button id="copyBtn" class="bg-custom-dark text-custom-yellow px-4 py-2">COPY</button>
+            </div>
+            
         </div>
     </div>
     

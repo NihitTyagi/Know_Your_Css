@@ -15,8 +15,6 @@ document.querySelectorAll('button[data-style]').forEach(button => {
         const style = this.getAttribute('data-style');
         const value = this.getAttribute('data-value');
 
-        
-
         const image = document.getElementById('imagePreview');
         if (image.src && image.src !== window.location.href) {
             // Toggle between applying and removing the style
@@ -28,7 +26,7 @@ document.querySelectorAll('button[data-style]').forEach(button => {
                 appliedStyles.set(style, value);
 
                 // Change button text to "Applied"
-                this.textContent = 'Applied';
+                this.textContent = 'Remove';
             } else {
                 // Remove the style from the image
                 image.style[style] = '';
@@ -39,12 +37,25 @@ document.querySelectorAll('button[data-style]').forEach(button => {
                 // Change button text back to "Apply"
                 this.textContent = 'Apply';
             }
+            document.querySelectorAll(`button[data-style="${style}"]`).forEach(otherButton => {
+                if (otherButton !== this && otherButton.textContent === 'Remove') {
+                    // Reset other buttons with the same data-style to 'Apply'
+                    otherButton.textContent = 'Apply';
+    
+                    // Remove the style from the output
+                    output.style[style] = '';
+    
+                    // Remove the style from appliedStyles map
+                    appliedStyles.delete(style);
+                }
+            });
+
         } else {
             alert("No image uploaded");
         }
 
         document.querySelectorAll(`button[data-style="${style}"]`).forEach(otherButton => {
-            if (otherButton !== this && otherButton.textContent === 'Applied') {
+            if (otherButton !== this && otherButton.textContent === 'Removed') {
                 // Reset other buttons with the same data-style to 'Apply'
                 otherButton.textContent = 'Apply';
 
@@ -61,7 +72,7 @@ document.querySelectorAll('button[data-style]').forEach(button => {
 // Clear button to reset the image and styles
 document.getElementById('clear').addEventListener('click', function () {
     document.querySelectorAll('button').forEach(button => {
-        if (button.textContent === 'Applied') {
+        if (button.textContent === 'Removed') {
             button.textContent = 'Apply';
         }
     });
