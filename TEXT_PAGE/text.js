@@ -11,9 +11,8 @@ document.querySelectorAll('button[data-style]').forEach(button => {
         // Check if the input field is empty
         if (!inputText.trim()) {
             alert("Please enter a text first.");
-            return; // Exit the function early if no text is entered
+            return;            
         }
-
         document.querySelectorAll(`button[data-style="${style}"]`).forEach(otherButton => {
             if (otherButton !== this && otherButton.textContent === 'Remove') {
                 // Reset other buttons with the same data-style to 'Apply'

@@ -2,152 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Know Your CSS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Know Your CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 h-screen ">
-    <!-- bg-custom-dark -->
-    <nav class="bg-custom-dark p-4">
-        <div class="flex justify-between items-center w-full">
-            <div class="text-custom-yellow text-2xl font-bold ml-[5px]">
-                Know Y'r CSS
-            </div>
-            <div class="ml-auto space-x-4 mr-[5px]">
-                <a href="./TEXT_PAGE/text.html">
-                    <button
-                        class="bg-custom-dark text-custom-yellow font-semibold py-2 px-4 rounded hover:bg-hover-bg-custom-yellow hover:text-black transition duration-300">
-                        Text
-                    </button>
-                </a>
-                <a href="./IMAGE_PAGE/image.html">
-                    <button
-                        class="bg-custom-dark text-custom-yellow font-semibold py-2 px-4 rounded hover:bg-hover-bg-custom-yellow hover:text-black transition duration-300">
-                        Image
-                    </button>
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="flex justify-center items-center sm:my-28">
-        <div
-            class="bg-blue p-6 rounded-lg shadow-lg hover:shadow-none hover:shadow-[0_4px_10px_rgba(255,255,0,0.8)] max-w-4xl w-full">
-            <div class="flex flex-col md:flex-row items-center">
-                <img src="./assets/css_img.png" alt="Sample Image"
-                    class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0">
-                <div class="md:ml-6 md:w-1/2">
-                    <p class="text-gray-700 mb-4">
-                        With this website, you can preview the output of various CSS styles before applying them to
-                        your code. Whether you're working with text or images, you can experiment with different
-                        styles to find the perfect look. Simply choose your object—either text or image—and apply
-                        different CSS properties to see how they affect the appearance. This way, you can ensure
-                        that you select the exact styles you need, saving time and avoiding guesswork in your design
-                        process.
-                    </p>
-                    <div class="flex justify-evenly">
-                        <a href="./TEXT_PAGE/text.html"><button
-                                class="bg-yellow-600 text-blue font-semibold m-5 py-2 px-4 rounded hover:bg-yellow-500 transition duration-300">
-                                <h5>Text</h5>
-                            </button></a>
-
-                        <a href="./IMAGE_PAGE/image.html"><button
-                                class="bg-yellow-600 text-blue font-semibold m-5 py-2 px-4 rounded hover:bg-yellow-500 transition duration-300">
-                                <h5>Image</h5>
-                            </button></a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- bg-custom-dark -->
+  <nav class="bg-custom-dark p-4">
+    <div class="flex justify-between items-center w-full">
+      <div class="text-custom-yellow text-2xl font-bold ml-[5px]">
+        Know Y'r CSS
+      </div>
+      <div class="ml-auto space-x-4 mr-[5px]">
+        <a href="./TEXT_PAGE/text.html">
+          <button
+            class="bg-custom-dark text-custom-yellow font-semibold py-2 px-4 rounded hover:bg-hover-bg-custom-yellow hover:text-black transition duration-300">
+            Text
+          </button>
+        </a>
+        <a href="./IMAGE_PAGE/image.html">
+          <button
+            class="bg-custom-dark text-custom-yellow font-semibold py-2 px-4 rounded hover:bg-hover-bg-custom-yellow hover:text-black transition duration-300">
+            Image
+          </button>
+        </a>
+      </div>
     </div>
-    <div class="flex justify-center items-center py-10 my-20">
-        <div class="w-full max-w-7xl bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-none hover:shadow-[0_4px_10px_rgba(255,255,0,0.8)]">
-          <div class="flex flex-col md:flex-row items-center">
-            <!-- Left Section (Image) -->
-            <img src="./assets/feedback.png" alt="Contact Image" class="w-full md:w-1/3 h-auto rounded-lg mb-4 md:mb-0 transition-transform duration-300 hover:scale-105">
-            
-            <!-- Right Section (Form and Buttons) -->
-            <div class="md:ml-6 w-full md:w-2/3">
-              <p class="text-gray-200 mb-4">
-                We would love to hear from you! Please fill out the form below or click on the buttons to navigate to the text or image preview page. You can preview styles before applying them.
-              </p>
-      
-              <!-- Dynamic Form Component -->
-              <form class="space-y-4">
-                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-                  <input type="text" placeholder="Your Name" class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
-                  <input type="email" placeholder="Your Email" class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
-                </div>
-                <textarea placeholder="Your Message" class="w-full p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200" rows="4"></textarea>
-                <button type="submit" id="feedback" class="w-full bg-yellow-600 text-[#282828] font-semibold py-2 rounded hover:bg-yellow-500 transition duration-300">
-                  Send Message
-                </button>
-              </form>
-              </div>
-            </div>
+  </nav>
+
+  <div class="flex justify-center items-center sm:my-28">
+    <div
+      class="bg-blue p-6 rounded-lg shadow-lg hover:shadow-none hover:shadow-[0_4px_10px_rgba(255,255,0,0.8)] max-w-4xl w-full">
+      <div class="flex flex-col md:flex-row items-center">
+        <img src="./assets/css_img.png" alt="Sample Image" class="w-full md:w-1/2 h-auto rounded-lg mb-4 md:mb-0">
+        <div class="md:ml-6 md:w-1/2">
+          <p class="text-gray-700 mb-4 ">
+            With this website, you can preview the output of various CSS styles before applying them to
+            your code. Whether you're working with text or images, you can experiment with different
+            styles to find the perfect look. Simply choose your object—either text or image—and apply
+            different CSS properties to see how they affect the appearance. This way, you can ensure
+            that you select the exact styles you need, saving time and avoiding guesswork in your design
+            process.
+          </p>
+          <div class="flex justify-evenly">
+            <a href="./TEXT_PAGE/text.html"><button
+                class="bg-yellow-600 text-blue font-semibold m-5 py-2 px-4 rounded hover:bg-yellow-500 transition duration-300">
+                <h5>Text</h5>
+              </button></a>
+
+            <a href="./IMAGE_PAGE/image.html"><button
+                class="bg-yellow-600 text-blue font-semibold m-5 py-2 px-4 rounded hover:bg-yellow-500 transition duration-300">
+                <h5>Image</h5>
+              </button></a>
+
           </div>
         </div>
       </div>
-      
-      
-      
+    </div>
+  </div>
+  <div class="flex justify-center items-center py-10 my-20">
+    <div
+      class="w-full max-w-7xl bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-none hover:shadow-[0_4px_10px_rgba(255,255,0,0.8)]">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Left Section (Image) -->
+        <img src="./assets/feedback.png" alt="Contact Image"
+          class="w-full md:w-1/3 h-auto rounded-lg mb-4 md:mb-0 transition-transform duration-300 hover:scale-105">
 
-    <footer class="bg-[#282828] text-white py-6">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            
-            <div class="mb-4 md:mb-0">
-              <h1 class="text-xl font-bold">MT Web Services </h1>
-              <p class="text-sm">Empowering People with Facilities.</p>
+        <!-- Right Section (Form and Buttons) -->
+        <div class="md:ml-6 w-full md:w-2/3">
+          <p class="text-gray-200 mb-4">
+            We would love to hear from you! Please fill out the form below to give a feedback!
+          </p>
+
+          <!-- Dynamic Form Component -->
+          <form class="space-y-4">
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+              <input type="text" placeholder="Your Name"
+                class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
+              <input type="email" placeholder="Your Email"
+                class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
             </div>
-      
-            <!-- Middle Section (Links) -->
-            <div class="flex space-x-6 text-sm">
-              <a href="#" class="hover:text-yellow-500">About Us</a>
-              <a href="#" class="hover:text-yellow-500">Services</a>
-              <a href="#" class="hover:text-yellow-500">Blog</a>
-              <a href="#" class="hover:text-yellow-500">Contact</a>
-            </div>
-      
-            <!-- Right Section (Social Icons) -->
-            <div class="flex space-x-4">
-              <a href="#" class="hover:text-yellow-500">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 32 32">
-                  <path
-                    fill="white"
-                    d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z">
-                  </path>
-              </svg>
-              </a>
-              <a href="#" class="hover:text-yellow-500">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 48 48">
-                  <path  fill="grey" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
-                  </svg>
-              </a>
-              <a href="#" class="hover:text-yellow-500">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 48 48">
-                  <path fill="white" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"></path>
-                  </svg>
-              </a>
-            </div>
-          </div>
+            <textarea placeholder="Your Message"
+              class="w-full p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200"
+              rows="4"></textarea>
+            <button type="submit" id="feedback"
+              class="w-full bg-yellow-600 text-[#282828] font-semibold py-2 rounded hover:bg-yellow-500 transition duration-300">
+              Send Message
+            </button>
+          </form>
         </div>
-      </footer>
-      
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <footer class="bg-[#282828] text-white py-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+
+        <div class="mb-4 md:mb-0">
+          <h1 class="text-xl font-bold">MT Web Services </h1>
+          <p class="text-sm">Empowering People with Facilities.</p>
+        </div>
+
+        <!-- Middle Section (Links) -->
+        <div class="flex space-x-6 text-sm">
+          <a href="#" class="hover:text-yellow-500">About Us</a>
+          <a href="#" class="hover:text-yellow-500">Services</a>
+          <a href="#" class="hover:text-yellow-500">Blog</a>
+          <a href="#" class="hover:text-yellow-500">Contact</a>
+        </div>
+
+        <!-- Right Section (Social Icons) -->
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 32 32">
+              <path fill="white"
+                d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 48 48">
+              <path fill="grey"
+                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+              </path>
+              <path fill="#FFF"
+                d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="h-8 w-8" viewBox="0 0 48 48">
+              <path fill="white"
+                d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
 
 
 
-     </script>
-    <script src="script.js"></script>
+
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
-
-

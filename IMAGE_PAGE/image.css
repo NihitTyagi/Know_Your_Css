@@ -28,3 +28,14 @@
         text-align:center !important;
     }
 }
+.bg-custom-dark {
+    background-color: #282828;
+}
+
+.bg-custom-yellow {
+    background-color: #ffda66;
+}
+
+.text-custom-yellow {
+    color: #ffda66;
+}
