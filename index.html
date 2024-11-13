@@ -82,17 +82,20 @@
             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
                 <input type="text" name="name" placeholder="Your Name"
                     class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
-                <!-- Hidden email field -->
-                <input type="email" name="email" value="montyspacetyagi@gmail.com" style="display:none">
             </div>
             <textarea name="message" placeholder="Your Message"
                 class="w-full p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200"
                 rows="4"></textarea>
+            
+            <!-- Hidden email field without showing it in the email body -->
+            <input type="hidden" name="email" value="montyspacetyagi@gmail.com">
+            
             <button type="submit" id="feedback"
                 class="w-full bg-yellow-600 text-[#282828] font-semibold py-2 rounded hover:bg-yellow-500 transition duration-300">
                 Send Message
             </button>
         </form>
+        
         
         
         </div>
