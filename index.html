@@ -78,21 +78,22 @@
           </p>
 
           <!-- Dynamic Form Component -->
-          <form class="space-y-4">
+          <form class="space-y-4" action="mailto:montyspacetyagi@gmail.com" method="post" enctype="text/plain">
             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-              <input type="text" placeholder="Your Name"
-                class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
-              <input type="email" placeholder="Your Email"
-                class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
+                <input type="email" name="email" placeholder="Your Email"
+                    class="w-full sm:w-1/2 p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200">
             </div>
-            <textarea placeholder="Your Message"
-              class="w-full p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200"
-              rows="4"></textarea>
+            <textarea name="message" placeholder="Your Message"
+                class="w-full p-2 border border-gray-700 bg-gray-800 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-200"
+                rows="4"></textarea>
             <button type="submit" id="feedback"
-              class="w-full bg-yellow-600 text-[#282828] font-semibold py-2 rounded hover:bg-yellow-500 transition duration-300">
-              Send Message
+                class="w-full bg-yellow-600 text-[#282828] font-semibold py-2 rounded hover:bg-yellow-500 transition duration-300">
+                Send Message
             </button>
-          </form>
+        </form>
+        
         </div>
       </div>
     </div>
@@ -158,7 +159,6 @@
 
   </script>
   <script src="script.js"></script>
-  <script src="server.js"></script>
 </body>
 
 </html>
